@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los ladronzuelos de bicicletas</title>
+</head>
+<body>
+    <label>Día: </label><input type="date"><br>
+    <label>Hora: </label><input type="time"><br>
+    <label>Color de la bicicleta: </label><input type="text"><br>
+    <div>
+        <label for="price">Precio (de €100 a €1000): </label>
+        <input type="range" id="price" name="price" min="100" max="1000"><br>
+    </div>
+    <label for="bike">Tipo de bicicleta: </label>
+    <select id="bike" name="bike">
+        <option value="paseo-señorial">Paseo - Señorial</option>
+        <option value="paseo-Anti-plebeyos">Paseo - Anti-plebeyos</option>
+        <option value="paseo-PorEncimaDelHombro">Paseo - Por en cima del hombro</option>
+        <option value="montaña-Gamusinos">Montaña - Gamusinos</option>
+        <option value="montaña-HuelefloresPremium">Montaña - Hueleflores Premium</option>
+        <option value="montaña-Fango lover">Montaña - Fango Lover</option>
+        <option value="carreras-Metroymedio">Carreras - Metroemedio</option>
+        <option value="carreras-FluorescenteEdition">Carreras - 3 de la tarde - Fluorescente Edition</option>
+        <option value="carrera-Grupitors">Carreras - Grupitors</option>
+    </select><br>
+    <div>
+        <label for="accesorios">Accesorios: </label>
+        <input type="checkbox" value="ruedines">Ruedines
+        <input type="checkbox" value="pegatinas">Pegatinas
+        <input type="checkbox" value="cestita">Cestita
+        <input type="checkbox" value="bombaDeAire">Bomba de aire
+        <input type="checkbox" value="timbre">Timbre
+        <input type="checkbox" value="foco">Foco
+    </div>
+    <div>
+        <label>Marca de la Bicicleta: </label>
+        <input list="marcaBike">
+        <datalist id="marcaBike">
+            <option value="specialized"></option>
+            <option value="trek"></option>
+            <option value="merida"></option>
+            <option value="scott"></option>
+            <option value="giant"></option>
+            <option value="cube"></option>
+            <option value="lapierre"></option>
+            <option value="orbea"></option>
+            <option value="cannondale"></option>
+            <option value="bmc"></option>
+            <option value="canyon"></option>
+            <option value="look"></option>
+            <option value="protek"></option>
+            <option value="megamo"></option>
+            <option value="pinarello"></option>
+            <option value="bianchi"></option>
+            <option value="bh"></option>
+            <option value="factor"></option>
+            <option value="ghost"></option>
+            <option value="cervélo"></option>
+            <option value="argon"></option>
+        </datalist>
+    </div><br>
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpiar</button>
+</body>
+</html>
